@@ -1,0 +1,48 @@
+/* Drop in a light CSS grid */
+main { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+article { grid-column: 1 / 3; }
+
+@media screen and (min-width: 600px) { article:first-child { grid-column: 1 / 3; } article:not(:first-child) { grid-column: initial; } }
+
+/*
+Default Overrides
+================================ */
+body { max-width: 38rem; padding: 1.5rem; margin: auto; color: #151515; background-color: #fafafa; font-family: 'Barlow', 'Arial', sans-serif; }
+
+a { color: #353535; text-decoration: none; }
+
+a:hover { color: #151515; text-decoration: underline; }
+
+/*
+Header & Navigation
+================================ */
+header { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 4px solid #151515; }
+
+.title { margin-bottom: 0; }
+
+.subtitle { margin-top: 0; }
+
+nav a { margin-right: 8px; padding: 8px; color: #fafafa; background-color: #151515; font-size: 0.8rem; border-radius: 2px; }
+
+nav a:hover { color: #fafafa; background-color: #353535; text-decoration: none; }
+
+/*
+Front Page & Article Feed
+================================ */
+article { padding-bottom: 12px; border-bottom: 1px solid #555; }
+
+.article-title { margin-bottom: 0; text-decoration: underline; }
+
+.article-desc { margin: 0; }
+
+.article-date { margin: 0; font-size: 0.8rem; font-style: italic; }
+
+img { max-width: 100%; }
+
+/*
+Footer Area
+================================ */
+footer { margin: 12px 0; font-size: 0.8rem; border-top: 4px solid #151515; }
+
+/*# sourceMappingURL=style.css.map */

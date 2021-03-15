@@ -1,0 +1,6 @@
+destination: "_build"
+paginate: 8
+
+plugins:
+    -   jekyll-feed
+    -   jekyll-paginate

@@ -1,0 +1,22 @@
+---
+layout: default
+title: Home
+---
+<main>
+
+    {% for post in site.posts %}
+
+        <article>
+            <h2 class="article-title">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <p class="article-desc">{{ post.desc }}</p>
+            <p class="article-date">{{ post.date | date_to_string }} - {{ post.author }}</p>
+            <p class="article-excerpt">
+                {{ post.excerpt | truncate: 128 }}
+            </p>
+        </article>
+
+    {% endfor %}
+
+</main>

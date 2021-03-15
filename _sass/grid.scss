@@ -1,0 +1,19 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+article {
+    grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 600px) {
+    article:first-child {
+        grid-column: 1 / 3;
+    }
+
+    article:not(:first-child) {
+        grid-column: initial;
+    }
+}
